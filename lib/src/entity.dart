@@ -307,7 +307,7 @@ class AssetEntity {
   /// If you need to see the loading status, look at the [loadFile].
   Future<File?> get file async => PhotoManager._getFileWithId(this.id);
 
-  Future<String?> get filePaht async =>
+  Future<String?> get filePath async =>
       PhotoManager._getFilePathWithId(this.id);
 
   /// This contains all the EXIF information, but in contrast, `Image` widget may not be able to display pictures.
